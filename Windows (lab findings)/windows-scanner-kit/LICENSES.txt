@@ -1,0 +1,29 @@
+Third-party software in this kit
+================================
+
+ClamAV 1.5.4 for Windows x64 (folder clamav\bin\clamav-1.5.4.win.x64)
+  Copyright Cisco Systems, Inc. and contributors.
+  Licence: GNU General Public License version 2 (GPL-2.0-only).
+  The licence texts are in clamav\bin\clamav-1.5.4.win.x64\COPYING.txt, and the licences
+  of the libraries it bundles (bzip2, curl, LLVM, PCRE, zlib, YARA, UnRAR and others) are in
+  clamav\bin\clamav-1.5.4.win.x64\COPYING\.
+  The files are unmodified runtime files from the official release package
+  clamav-1.5.4.win.x64.zip. Debug symbols (.pdb), import libraries (.lib), headers and the
+  bytecode tools were left out to keep the kit small.
+  Source code for this exact version:
+    https://github.com/Cisco-Talos/clamav/releases/tag/clamav-1.5.4
+    https://github.com/Cisco-Talos/clamav/tree/clamav-1.5.4
+  Project: https://www.clamav.net
+
+  The release package also contains the Microsoft Visual C++ runtime DLLs
+  (vcruntime140*.dll, msvcp140*.dll, concrt140.dll), redistributed as part of ClamAV
+  under Microsoft's redistribution terms.
+
+Not included
+  Python is a prerequisite and is not part of the kit (https://www.python.org,
+  Python Software Foundation License).
+
+Kit scripts
+  fpolicy\fpolicy_av.py and the PowerShell scripts in fpolicy\ were written for this
+  pilot. They are provided as is, without warranty, and are not a NetApp-supported
+  product.

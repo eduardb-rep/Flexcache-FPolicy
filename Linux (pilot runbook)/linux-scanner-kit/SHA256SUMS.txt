@@ -1,0 +1,7 @@
+SHA256 checksums of the kit files (check with: sha256sum -c SHA256SUMS.txt)
+d359658ee137fa49877b890c2e7c9f5d873b794cb14ddfb168aa53d78b4fd277  NOTICE.txt
+dd1313cce9847b7d1da3de89fbbed1dd821dcc3990dbd69f2870ae6987294cd7  README.md
+1b0cc23cd33bc88120edbdd933e53df7ce93fe81ffc8f34f07735699431af5ca  fpolicy_av_linux.py
+59cd2ce2733d7c5df62f6c1a5d71c4df14b778cfa867bca3ed8d0360267cee80  setup_cache.py
+86c67316c13f9fc049794f6108cb8dabea3fe126bd6933b41e966116a9649825  setup_scanner.py
+b2fca2bc9883c5cc3bf84bfaeb7690d6ca0ea902ff6afd2027bfa5a8dffba556  tests/test_server.py

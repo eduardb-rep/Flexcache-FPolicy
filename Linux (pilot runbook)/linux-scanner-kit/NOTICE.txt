@@ -1,0 +1,25 @@
+Software used by the Linux scanner kit
+======================================
+
+The kit contains only the scripts written for this pilot (setup_scanner.py,
+setup_cache.py, fpolicy_av_linux.py, tests/test_server.py). They are provided as is,
+without warranty, and are not a NetApp-supported product.
+
+The wizards install these packages from the Ubuntu archive of the host's release
+(apt-get, with Ubuntu's security updates). Nothing below is redistributed in the kit.
+
+  clamav, clamav-daemon, clamav-freshclam, clamdscan   ClamAV (Cisco Talos), GPL-2.0
+  cifs-utils, keyutils                                 GPL-3.0 / GPL-2.0
+  python3-redis                                        redis-py, MIT
+  redis-server, redis-sentinel, redis-tools            Redis (cache nodes, optional)
+  valkey-server, valkey-sentinel, valkey-tools         Valkey (cache nodes, optional), BSD-3-Clause
+
+  The exact versions and licence files are on each host after installation:
+    dpkg -l <package>    and    /usr/share/doc/<package>/copyright
+
+  On Ubuntu 22.04, setup_cache.py can build Valkey from the official source release
+  (https://github.com/valkey-io/valkey) when you choose Valkey there.
+
+ClamAV signatures are downloaded by freshclam from the ClamAV CDN
+(database.clamav.net). The optional test signature lab_eicar.ndb, which detects the
+EICAR test string, is written by setup_scanner.py.
